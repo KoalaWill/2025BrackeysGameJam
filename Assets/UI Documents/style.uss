@@ -1,0 +1,554 @@
+.button-style {
+    height: 100px;
+    width: 370px;
+    background-color: rgba(188, 188, 188, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 60px;
+    -unity-font-style: normal;
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    letter-spacing: 0;
+}
+
+.button-style:hover {
+    height: 100px;
+    width: 370px;
+    background-color: rgba(188, 188, 188, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 60px;
+    -unity-font-style: normal;
+    color: rgb(0, 0, 0);
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    letter-spacing: 0;
+    background-image: url('project://database/Assets/UI%20sprites/buttonBG.png?fileID=21300000&guid=5834de98240b8054b96e45e2e83dec82&type=3#buttonBG');
+    opacity: 1;
+    flex-basis: 15%;
+}
+
+.button-style:active {
+    height: 100px;
+    width: 370px;
+    background-color: rgba(188, 188, 188, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 60px;
+    -unity-font-style: normal;
+    color: rgb(0, 0, 0);
+    -unity-font: url('project://database/Assets/Fonts/MinecraftBold-nMK1.otf?fileID=12800000&guid=24595e6f18958bc41a82f29b5b7c6113&type=3#MinecraftBold-nMK1');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftBold-nMK1%20SDF.asset?fileID=11400000&guid=843b53e7c16094f4c816ffdae1f6a306&type=2#MinecraftBold-nMK1 SDF');
+    letter-spacing: 0;
+    background-image: url('project://database/Assets/UI%20sprites/buttonBG.png?fileID=21300000&guid=5834de98240b8054b96e45e2e83dec82&type=3#buttonBG');
+    opacity: 1;
+    flex-basis: 15%;
+}
+
+.unity-progress-bar__container {
+    min-height: 15px;
+    height: 15px;
+}
+
+.unity-progress-bar__background {
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/UI%20sprites/progressBarBG.png?fileID=2800000&guid=6e84a17d34d43c14188e54cbe494af70&type=3#progressBarBG');
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.unity-progress-bar__progress {
+    border-radius: 2px;
+}
+
+.unity-text-field {
+    position: relative;
+    width: 65px;
+    height: 31px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 30px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    white-space: normal;
+    -unity-text-align: middle-left;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: clip;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/toggleBG.png?fileID=2800000&guid=093ca6b7a49337343882074bd4a5f760&type=3#toggleBG');
+    left: auto;
+}
+
+.unity-text-field:hover {
+    position: relative;
+    width: 65px;
+    height: 31px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 30px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    white-space: normal;
+    -unity-text-align: middle-left;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: clip;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/textFieldHoverBG.png?fileID=2800000&guid=57b2b65b5d22f1c48895cb13f31a503c&type=3#textFieldHoverBG');
+    left: auto;
+}
+
+.unity-text-field__input {
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-text-element--inner-input-field-component {
+    padding: 0;
+    -unity-text-align: lower-center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-base-slider__tracker {
+    background-color: rgb(110, 110, 110);
+}
+
+.keyButton-style {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    height: 31px;
+    width: 170px;
+    font-size: 30px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/keyButtonBG.png?fileID=2800000&guid=f6f43b6209805fa458ed1d212cce01dc&type=3#keyButtonBG');
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-text-align: lower-center;
+}
+
+.keyButton-style:hover {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    height: 31px;
+    width: 170px;
+    font-size: 30px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/keyButtonHoverAndActiveBG.png?fileID=2800000&guid=ea0529432245d344e8a1286d2566c3c0&type=3#keyButtonHoverAndActiveBG');
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-text-align: lower-center;
+}
+
+.keyButton-style:active {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    height: 31px;
+    width: 170px;
+    font-size: 30px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/keyButtonHoverAndActiveBG.png?fileID=2800000&guid=ea0529432245d344e8a1286d2566c3c0&type=3#keyButtonHoverAndActiveBG');
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-text-align: lower-center;
+}
+
+.toggleButton-style {
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    font-size: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('project://database/Assets/UI%20sprites/toggleBG.png?fileID=2800000&guid=093ca6b7a49337343882074bd4a5f760&type=3#toggleBG');
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.toggleButton-style:hover {
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    font-size: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('project://database/Assets/UI%20sprites/toggleHoverBG.png?fileID=2800000&guid=967185309325be74e98408ca8de5f574&type=3#toggleHoverBG');
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.defaultButton-style {
+    overflow: hidden;
+    width: 140px;
+    position: absolute;
+    top: 518px;
+    left: 549px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 31px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/defaultButtonBG.png?fileID=2800000&guid=e8445bdac31cf5e4d8bf66b313142f00&type=3#defaultButtonBG');
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.defaultButton-style:hover {
+    overflow: hidden;
+    width: 140px;
+    position: absolute;
+    top: 518px;
+    left: 549px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 31px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/defaultButtonHoverAndActiveBG.png?fileID=2800000&guid=279c9956aae5dd846b3ffcbc248aaa25&type=3#defaultButtonHoverAndActiveBG');
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.defaultButton-style:active {
+    overflow: hidden;
+    width: 140px;
+    position: absolute;
+    top: 518px;
+    left: 549px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 31px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/UI%20sprites/defaultButtonHoverAndActiveBG.png?fileID=2800000&guid=279c9956aae5dd846b3ffcbc248aaa25&type=3#defaultButtonHoverAndActiveBG');
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.pausedMenuButton-style {
+    background-image: url('project://database/Assets/UI%20sprites/pausedMenuButtonBG.png?fileID=2800000&guid=7b746bbfba7c63f44b76ea51c1ea26e2&type=3#pausedMenuButtonBG');
+}
+
+.pausedMenuButton-style:hover {
+    background-image: url('project://database/Assets/UI%20sprites/pausedMenuButtonHoverAndActiveBG.png?fileID=2800000&guid=33af9dcc8676b1f4989593e0ea996c3a&type=3#pausedMenuButtonHoverAndActiveBG');
+}
+
+.pausedMenuButton-style:active {
+    background-image: url('project://database/Assets/UI%20sprites/pausedMenuButtonHoverAndActiveBG.png?fileID=2800000&guid=33af9dcc8676b1f4989593e0ea996c3a&type=3#pausedMenuButtonHoverAndActiveBG');
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    -unity-font-style: bold;
+    font-size: 33px;
+}
+
+.shaderDefault {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    display: flex;
+}
+
+.shaderUp {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    flex-direction: column;
+    align-self: auto;
+    justify-content: center;
+    translate: 0 -1138px;
+    opacity: 0;
+}
+
+.startMenuButtonSet-style {
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+    -unity-font-style: italic;
+    color: rgb(184, 183, 184);
+    font-size: 40px;
+    -unity-text-align: upper-left;
+}
+
+.startMenuButtonSet-style:hover {
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+    -unity-font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    -unity-text-align: upper-left;
+}
+
+.startMenuButtonSet-style:active {
+    -unity-font: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3.otf?fileID=12800000&guid=752d11aaefd96e146b8bcfc56ade0a67&type=3#MinecraftRegular-Bmg3');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftRegular-Bmg3%20SDF.asset?fileID=11400000&guid=21da8da7eab422f49b978ce92cd82dae&type=2#MinecraftRegular-Bmg3 SDF');
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+    -unity-font-style: bold-and-italic;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    -unity-text-align: upper-left;
+}
+
+.buttonSetDefault {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.buttonSetDown {
+    translate: 0 200px;
+    opacity: 1;
+}
+
+.otherOptionsButton-style {
+    background-image: url('project://database/Assets/UI%20sprites/otherOptionsIcon.png?fileID=2800000&guid=d3d0fe8d5ba641b449329cc14fbaa5a3&type=3#otherOptionsIcon');
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: 70px;
+    height: 70px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 979px;
+    left: 30px;
+    opacity: 0.64;
+}
+
+.otherOptionsButton-style-onHover {
+    background-image: url('project://database/Assets/UI%20sprites/otherOptionsIcon.png?fileID=2800000&guid=d3d0fe8d5ba641b449329cc14fbaa5a3&type=3#otherOptionsIcon');
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: 70px;
+    height: 70px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 979px;
+    left: 30px;
+    opacity: 0.64;
+    rotate: 180deg;
+}
+
+.startIndicatorDefault {
+    top: -40px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftBold-nMK1.otf?fileID=12800000&guid=24595e6f18958bc41a82f29b5b7c6113&type=3#MinecraftBold-nMK1');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftBold-nMK1%20SDF.asset?fileID=11400000&guid=843b53e7c16094f4c816ffdae1f6a306&type=2#MinecraftBold-nMK1 SDF');
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.startIndicatorOn {
+    opacity: 1;
+}
+
+.resumeIndicatorDefault {
+    top: -40px;
+    -unity-font: url('project://database/Assets/Fonts/MinecraftBold-nMK1.otf?fileID=12800000&guid=24595e6f18958bc41a82f29b5b7c6113&type=3#MinecraftBold-nMK1');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftBold-nMK1%20SDF.asset?fileID=11400000&guid=843b53e7c16094f4c816ffdae1f6a306&type=2#MinecraftBold-nMK1 SDF');
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.resumeIndicatorOn {
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+.pausedLabelDefault {
+    -unity-font: url('project://database/Assets/Fonts/MinecraftBold-nMK1.otf?fileID=12800000&guid=24595e6f18958bc41a82f29b5b7c6113&type=3#MinecraftBold-nMK1');
+    -unity-font-definition: url('project://database/Assets/Fonts/MinecraftBold-nMK1%20SDF.asset?fileID=11400000&guid=843b53e7c16094f4c816ffdae1f6a306&type=2#MinecraftBold-nMK1 SDF');
+    color: rgb(255, 255, 255);
+    font-size: 160px;
+}
+
+.pausedLabelLeft {
+    translate: -680px 0;
+}
+
+.pausedIconDefault {
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 465px;
+    width: 150px;
+    height: 150px;
+    background-image: url('project://database/Assets/UI%20sprites/pausedIcon.png?fileID=2800000&guid=73af1d05b82f40344a6ea511e052b32a&type=3#pausedIcon');
+    translate: -340px 0;
+}
+
+.pausedIconRight {
+    translate: 0 0;
+}
+
+.pausedShaderDefault {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/UI%20sprites/blackGradiant.png?fileID=2800000&guid=48eb7effbbacd4e46840f101299ad94d&type=3#blackGradiant');
+    justify-content: flex-end;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.pausedShaderMinimize {
+    transition-duration: 0.5s;
+    scale: 0 0;
+    opacity: 0;
+}

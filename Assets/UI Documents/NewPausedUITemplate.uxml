@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Documents/style.uss?fileID=7433441132597879392&amp;guid=ad9fb057a26bb3342941ab15bb065285&amp;type=3#style" />
+    <ui:VisualElement name="shader" class="pausedShaderDefault pausedShaderMinimize">
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="resumeButton" style="align-self: center; height: 1080px; width: 1920px; opacity: 0; justify-content: flex-end; align-items: flex-start; position: absolute; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        <ui:VisualElement name="pausedIcon" class="pausedIconDefault pausedIconRight" style="transition-delay: 0s;" />
+        <ui:VisualElement name="pausedLabelMask" style="flex-grow: 1; position: absolute; width: auto; height: 150px; top: 465px; justify-content: center; left: 720px; overflow: hidden;">
+            <ui:Label tabindex="-1" text="PAUSED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="pausedLabel" class="pausedLabelDefault pausedLabelLeft" style="transition-duration: 0.5s; transition-delay: 0s;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="&gt; Click Anywhere to Resume &lt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="resumeIndicator" class="resumeIndicatorDefault" style="transition-duration: 0.5s; transition-delay: 0s;" />
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="otherOptionsButton" class="otherOptionsButton-style" style="transition-duration: 0.5s; transition-timing-function: ease;" />
+        <ui:VisualElement name="buttonSetMask" style="flex-grow: 1; position: absolute; left: 30px; top: 785px; justify-content: flex-end; overflow: hidden;">
+            <ui:VisualElement name="buttonSet" class="buttonSetDefault buttonSetDown" style="transition-duration: 0.5s; transition-property: all; opacity: 1;">
+                <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settingsButton" class="startMenuButtonSet-style" />
+                <ui:Button text="Quit to Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="quitToMenuButton" class="startMenuBottonSet-style startMenuButtonSet-style" />
+                <ui:Button text="Quit to Desktop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="quitToDesktopButton" class="startMenuButtonSet-style" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

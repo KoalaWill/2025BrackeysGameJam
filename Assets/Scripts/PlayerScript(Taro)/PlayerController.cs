@@ -100,6 +100,7 @@ namespace TarodevController
                 _coyoteUsable = true;
                 _bufferedJumpUsable = true;
                 _endedJumpEarly = false;
+                // Debug.Log($"The _frameVelocity.y at line 104 is {Mathf.Abs(_frameVelocity.y)}");
                 GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
             }
             // Left the Ground

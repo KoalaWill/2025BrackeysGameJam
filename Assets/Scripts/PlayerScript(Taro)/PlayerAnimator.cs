@@ -97,7 +97,6 @@ namespace TarodevController
                 SetColor(_jumpParticles);
                 SetColor(_launchParticles);
                 _jumpParticles.Play();
-                Debug.Log("Jumped!");
             }
         }
 

@@ -76,7 +76,9 @@ namespace TarodevController
         private void HandleIdleSpeed()
         {
             var inputStrength = Mathf.Abs(_player.FrameInput.x);
-            _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
+            //Debug.Log($"inputStrength: {inputStrength}");
+            //Debug.Log($"maxIdleSpeed: {_maxIdleSpeed}");
+            _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(0, _maxIdleSpeed, inputStrength));
             _moveParticles.transform.localScale = Vector3.MoveTowards(_moveParticles.transform.localScale, Vector3.one * inputStrength, 2 * Time.deltaTime);
         }
 
@@ -124,10 +126,12 @@ namespace TarodevController
 
         private void DetectGroundColor()
         {
+            //Debug.Log("Detecting ground color");
             var hit = Physics2D.Raycast(transform.position, Vector3.down, 2);
 
             if (!hit || hit.collider.isTrigger || !hit.transform.TryGetComponent(out SpriteRenderer r)) return;
-            var color = r.color;
+            //Debug.Log("detect color executed");
+            var color = hit.transform.GetComponent<SpriteRenderer>().color;
             _currentGradient = new ParticleSystem.MinMaxGradient(color * 0.9f, color * 1.2f);
             SetColor(_moveParticles);
         }

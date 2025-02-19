@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 841c30e987b9529489a44a148bd65806
+guid: b270bbb1a4db06641b01d23ecb7deb5f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -7,7 +7,7 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: side
-    second: {fileID: 7400000, guid: f808686057f3f9641bd7c3f6859cb668, type: 2}
+    second: {fileID: 7400000, guid: ab9431d7dea134243aaa1e531387122c, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -100,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638755974301444632
+  platformSettingsDirtyTick: 638755978468445398
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,18 +124,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: idle_Frame_0
+  - name: walk_Frame_0
     originalName: 
     pivot: {x: 0.5333333, y: -1.4347825}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 100
+      x: 27
+      y: 68
       width: 15
       height: 23
-    spriteID: 9b1fbd4670b027e43973edf99600a595
+    spriteID: 15cb373845753d64881fa37a413ae4ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,8 +143,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 100}
-  - name: idle_Frame_1
+    uvTransform: {x: 27, y: 68}
+  - name: walk_Frame_1
     originalName: 
     pivot: {x: 0.5333333, y: -1.375}
     alignment: 9
@@ -155,7 +155,7 @@ ScriptedImporter:
       y: 4
       width: 15
       height: 24
-    spriteID: 2f91b66839d9e6847b7f5a15accfd0b4
+    spriteID: e0c5ac672734fc14299cdab3350d9449
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -164,7 +164,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: idle_Frame_2
+  - name: walk_Frame_2
     originalName: 
     pivot: {x: 0.5333333, y: -1.375}
     alignment: 9
@@ -175,7 +175,7 @@ ScriptedImporter:
       y: 36
       width: 15
       height: 24
-    spriteID: 7af20d82664beca4498a9665174587e4
+    spriteID: 68a8ecb28b39afd4791438d702586a39
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,7 +184,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 36}
-  - name: idle_Frame_3
+  - name: walk_Frame_3
     originalName: 
     pivot: {x: 0.5333333, y: -1.375}
     alignment: 9
@@ -195,7 +195,7 @@ ScriptedImporter:
       y: 68
       width: 15
       height: 24
-    spriteID: 59673fe510c74e1429b87cab37267a89
+    spriteID: e28a73347f59a9343abd9ba82d2f23c4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -204,7 +204,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 68}
-  - name: idle_Frame_4
+  - name: walk_Frame_4
     originalName: 
     pivot: {x: 0.5333333, y: -1.4347825}
     alignment: 9
@@ -212,10 +212,50 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 27
-      y: 4
+      y: 99
       width: 15
       height: 23
-    spriteID: e5d91a4154b124f4aa96117483e446b8
+    spriteID: d5fc4ea63b196b7449c8d92acad185e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 27, y: 99}
+  - name: walk_Frame_5
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 15
+      height: 24
+    spriteID: 43cc8f90b83d6f24a828a4188ab4949e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: walk_Frame_6
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 27
+      y: 4
+      width: 15
+      height: 24
+    spriteID: e98a8785a3d0e1840848d4d05ad48900
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -224,55 +264,99 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 27, y: 4}
+  - name: walk_Frame_7
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 27
+      y: 36
+      width: 15
+      height: 24
+    spriteID: 502da06fc1955874994b7d4f14a7034f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 27, y: 36}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 160719012
-    name: idle
+    guid: -719084555
+    name: walk
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: idle_Frame_0
+    - name: walk_Frame_0
       frameIndex: 0
       cellRect:
         x: 32
         y: 33
         width: 15
         height: 23
-      spriteId: 9b1fbd4670b027e43973edf99600a595
-    - name: idle_Frame_1
+      spriteId: 15cb373845753d64881fa37a413ae4ce
+    - name: walk_Frame_1
       frameIndex: 1
       cellRect:
         x: 32
         y: 33
         width: 15
         height: 24
-      spriteId: 2f91b66839d9e6847b7f5a15accfd0b4
-    - name: idle_Frame_2
+      spriteId: e0c5ac672734fc14299cdab3350d9449
+    - name: walk_Frame_2
       frameIndex: 2
       cellRect:
         x: 32
         y: 33
         width: 15
         height: 24
-      spriteId: 7af20d82664beca4498a9665174587e4
-    - name: idle_Frame_3
+      spriteId: 68a8ecb28b39afd4791438d702586a39
+    - name: walk_Frame_3
       frameIndex: 3
       cellRect:
         x: 32
         y: 33
         width: 15
         height: 24
-      spriteId: 59673fe510c74e1429b87cab37267a89
-    - name: idle_Frame_4
+      spriteId: e28a73347f59a9343abd9ba82d2f23c4
+    - name: walk_Frame_4
       frameIndex: 4
       cellRect:
         x: 32
         y: 33
         width: 15
         height: 23
-      spriteId: e5d91a4154b124f4aa96117483e446b8
+      spriteId: d5fc4ea63b196b7449c8d92acad185e7
+    - name: walk_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 32
+        y: 33
+        width: 15
+        height: 24
+      spriteId: 43cc8f90b83d6f24a828a4188ab4949e
+    - name: walk_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 32
+        y: 33
+        width: 15
+        height: 24
+      spriteId: e98a8785a3d0e1840848d4d05ad48900
+    - name: walk_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 32
+        y: 33
+        width: 15
+        height: 24
+      spriteId: 502da06fc1955874994b7d4f14a7034f
     linkedCells: []
     parentIndex: -1
   platformSettings:

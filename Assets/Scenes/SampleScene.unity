@@ -160,7 +160,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.045, y: 0.4}
+  m_Offset: {x: -0.045, y: 0.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -171,7 +171,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.05, y: 1.15}
+  m_Size: {x: 1.05, y: 1.52}
   m_EdgeRadius: 0
 --- !u!114 &395988009
 MonoBehaviour:
@@ -3200,9 +3200,117 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2969068311587289281, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311587289283, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311587289283, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.m_Position.y
+      value: -0.00000017971301
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.m_Position.z
+      value: -0.1413321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: -0.00024148366
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949152, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: ShapeModule.alignToDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949165, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949167, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311631949167, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068311871471200, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312368229159, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312368229177, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312368229177, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312440364619, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312440364621, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312440364621, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312619346368, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312619346370, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312619346370, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312669941331, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312669941333, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312669941333, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
+      objectReference: {fileID: 0}
     - target: {fileID: 2969068312669941334, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: lengthInSec
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068312704584582, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
       objectReference: {fileID: 0}
     - target: {fileID: 2969068313154050965, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -3216,6 +3324,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.8143
       objectReference: {fileID: 0}
+    - target: {fileID: 2969068313154050966, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b6689af44de61884fa73ae20b218cf75, type: 2}
     - target: {fileID: 2969068313154050967, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -3227,14 +3339,30 @@ PrefabInstance:
     - target: {fileID: 2969068313154050967, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 648716935243227520, guid: caadf6f021d85b444b9c207c8eec938d, type: 3}
+      objectReference: {fileID: -7145563455610528981, guid: 841c30e987b9529489a44a148bd65806, type: 3}
     - target: {fileID: 2969068313154050967, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_DrawMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2969068313154050967, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068313154050967, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068313322230365, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_TagString
+      value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068313322230367, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969068313322230367, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -496934229
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1544650614272011794, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}

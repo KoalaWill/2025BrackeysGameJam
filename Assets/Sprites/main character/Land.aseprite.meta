@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 841c30e987b9529489a44a148bd65806
+guid: 9fee45acd39034d428aa4381b03dc137
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -7,7 +7,7 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: side
-    second: {fileID: 7400000, guid: f808686057f3f9641bd7c3f6859cb668, type: 2}
+    second: {fileID: 7400000, guid: f2415ee6c48c1554fba1bbc5aacd4efa, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -100,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638755974301444632
+  platformSettingsDirtyTick: 638755978068567239
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,29 +124,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: idle_Frame_0
+  - name: Land_Frame_0
     originalName: 
-    pivot: {x: 0.5333333, y: -1.4347825}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 100
-      width: 15
-      height: 23
-    spriteID: 9b1fbd4670b027e43973edf99600a595
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 100}
-  - name: idle_Frame_1
-    originalName: 
-    pivot: {x: 0.5333333, y: -1.375}
+    pivot: {x: 0.5333333, y: -1.36}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -154,8 +134,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 15
-      height: 24
-    spriteID: 2f91b66839d9e6847b7f5a15accfd0b4
+      height: 25
+    spriteID: 042bf254540958543aa3f0dae2de1647
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -164,18 +144,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: idle_Frame_2
+  - name: Land_Frame_1
     originalName: 
-    pivot: {x: 0.5333333, y: -1.375}
+    pivot: {x: 0.5333333, y: -1.36}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 36
+      y: 37
       width: 15
-      height: 24
-    spriteID: 7af20d82664beca4498a9665174587e4
+      height: 25
+    spriteID: 0a0ed6cd548e61341ac64fa629b86811
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -183,19 +163,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 36}
-  - name: idle_Frame_3
+    uvTransform: {x: 4, y: 37}
+  - name: Land_Frame_2
     originalName: 
-    pivot: {x: 0.5333333, y: -1.375}
+    pivot: {x: 0.5333333, y: -1.36}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 68
+      y: 70
       width: 15
-      height: 24
-    spriteID: 59673fe510c74e1429b87cab37267a89
+      height: 25
+    spriteID: afa298c6805059a4ba64c4d3ba53eb76
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -203,76 +183,40 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 68}
-  - name: idle_Frame_4
-    originalName: 
-    pivot: {x: 0.5333333, y: -1.4347825}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 27
-      y: 4
-      width: 15
-      height: 23
-    spriteID: e5d91a4154b124f4aa96117483e446b8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 27, y: 4}
+    uvTransform: {x: 4, y: 70}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 160719012
-    name: idle
+    guid: 1920309467
+    name: Land
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: idle_Frame_0
+    - name: Land_Frame_0
       frameIndex: 0
       cellRect:
         x: 32
-        y: 33
+        y: 34
         width: 15
-        height: 23
-      spriteId: 9b1fbd4670b027e43973edf99600a595
-    - name: idle_Frame_1
+        height: 25
+      spriteId: 042bf254540958543aa3f0dae2de1647
+    - name: Land_Frame_1
       frameIndex: 1
       cellRect:
         x: 32
-        y: 33
+        y: 34
         width: 15
-        height: 24
-      spriteId: 2f91b66839d9e6847b7f5a15accfd0b4
-    - name: idle_Frame_2
+        height: 25
+      spriteId: 0a0ed6cd548e61341ac64fa629b86811
+    - name: Land_Frame_2
       frameIndex: 2
       cellRect:
         x: 32
-        y: 33
+        y: 34
         width: 15
-        height: 24
-      spriteId: 7af20d82664beca4498a9665174587e4
-    - name: idle_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 32
-        y: 33
-        width: 15
-        height: 24
-      spriteId: 59673fe510c74e1429b87cab37267a89
-    - name: idle_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 32
-        y: 33
-        width: 15
-        height: 23
-      spriteId: e5d91a4154b124f4aa96117483e446b8
+        height: 25
+      spriteId: afa298c6805059a4ba64c4d3ba53eb76
     linkedCells: []
     parentIndex: -1
   platformSettings:

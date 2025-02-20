@@ -40,6 +40,7 @@ namespace TarodevController
 
         private void Update()
         {
+            if(GameManager.instance.currentState != GameManager.GameState.Playing) return;
             _time += Time.deltaTime;
             GatherInput();
         }

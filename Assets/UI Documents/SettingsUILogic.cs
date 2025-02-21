@@ -26,13 +26,14 @@ public class SettingsUILogic : MonoBehaviour
     private Button jumpKeyButton;
     private Button interactKeyButton;
     private Event keyEvent;
-    public KeyCode leftKey {get; set;}
-    public KeyCode rightKey {get; set;}
-    public KeyCode jumpKey {get; set;}
+    private KeyCode leftKey {get; set;}
+    private KeyCode rightKey {get; set;}
+    private KeyCode jumpKey {get; set;}
     public KeyCode interactKey {get; set;}
     private KeyCode newKey;
     private string buttonText;
     private bool waitingForKey;
+    public bool keyBindChanged;
 
     private Button inputOverlayToggleButton;
     private Button timerDisplayToggleButton;
@@ -88,7 +89,7 @@ public class SettingsUILogic : MonoBehaviour
         jumpKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("jumpkey", "Space"));
         interactKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("interactkey", "E"));
         inputOverlayEnabled = PlayerPrefs.GetInt("inputOverlayEnabled", 0) == 0 ? false : true;
-        timerDisplayEnabled = PlayerPrefs.GetInt("timerDisplayEnabled", 0) == 0 ? false : true;
+        timerDisplayEnabled = PlayerPrefs.GetInt("timerDisplayEnabled", 1) == 0 ? false : true;
     }
 
     void resetPlayerPrefs()
@@ -99,7 +100,7 @@ public class SettingsUILogic : MonoBehaviour
         PlayerPrefs.SetString("jumpkey", "Space");
         PlayerPrefs.SetString("interactkey", "E");
         PlayerPrefs.SetInt("inputOverlayEnabled", 0);
-        PlayerPrefs.SetInt("timerDisplayEnabled", 0);
+        PlayerPrefs.SetInt("timerDisplayEnabled", 1);
     }
 
     void setPlayerPrefsValue()
@@ -331,6 +332,7 @@ public class SettingsUILogic : MonoBehaviour
                     PlayerPrefs.SetString("leftkey", buttonText);
                     break;
             }
+            keyBindChanged = true;
         }
         
         disableInterceptOverlay();

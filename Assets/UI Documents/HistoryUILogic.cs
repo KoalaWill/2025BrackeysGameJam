@@ -28,8 +28,8 @@ public class HistoryUILogic : MonoBehaviour
     private string averageTime;
 
     public stopwatchFunc stopwatch = new stopwatchFunc();
-    private TimeSpan totalTime;
-    private TimeSpan savedTime;
+    public TimeSpan totalTime;
+    public TimeSpan savedTime;
     void Awake()
     {
         if (instance == null)
@@ -117,9 +117,9 @@ public class HistoryUILogic : MonoBehaviour
 
     void setPlayerPrefsValue()
     {
-        personalBestLable.text = personalBestTime == "0" ? "-- : -- : --" : formatTimeSpan(personalBestTime);
+        personalBestLable.text = personalBestTime == "0" ? "--:--:---" : formatTimeSpan(personalBestTime);
         completedTimesLable.text = completedTimes.ToString();
-        averageLable.text = averageTime == "0" ? "-- : -- : --" :  formatTimeSpan(averageTime);
+        averageLable.text = averageTime == "0" ? "--:--:---" :  formatTimeSpan(averageTime);
     }
 
     async void escapePressed()
@@ -141,13 +141,13 @@ public class HistoryUILogic : MonoBehaviour
     public void createStopwatch()
     {
         totalTime= TimeSpan.Zero;
-        savedTime = TimeSpan.FromSeconds(double.Parse(PlayerPrefs.GetString("savedTime", "0")));
+        savedTime = TimeSpan.FromMilliseconds(double.Parse(PlayerPrefs.GetString("savedTime", "0")));
     }
 
     public void saveStopwatchTime()
     {
         totalTime = stopwatch.elapsedTime + savedTime;
-        PlayerPrefs.SetString("savedTime", (totalTime + savedTime).TotalSeconds.ToString());
+        PlayerPrefs.SetString("savedTime", (totalTime + savedTime).TotalMilliseconds.ToString());
     }
 
     public void resetSavedStopwatchTime()
@@ -159,20 +159,20 @@ public class HistoryUILogic : MonoBehaviour
     public void plusTotalTime()
     {
         totalTime = stopwatch.elapsedTime + savedTime;
-        UnityEngine.Debug.Log(totalTime);
+        //UnityEngine.Debug.Log(totalTime);
     }
 
-    static string formatTimeSpan(string totalSeconds)
+    public static string formatTimeSpan(string totalSeconds)
     {
         TimeSpan timeSpan = TimeSpan.FromSeconds(double.Parse(totalSeconds));
-        return $"{timeSpan.Hours:00} : {timeSpan.Minutes:00} : {timeSpan.Seconds:00}";
+        return $"{timeSpan.Minutes:00}:{timeSpan.Seconds:00}:{timeSpan.Milliseconds:000}";
     }
 
     void saveRecordAndResetStopWatch()
     {
         plusTotalTime();
         PlayerPrefs.SetInt("completedTimes", PlayerPrefs.GetInt("completedTimes") + 1);
-        double sum = (totalTime + savedTime).TotalSeconds;
+        double sum = (totalTime + savedTime).TotalMilliseconds;
         if (sum < double.Parse(personalBestTime))
         {
             PlayerPrefs.SetString("personalBestTime", sum.ToString());

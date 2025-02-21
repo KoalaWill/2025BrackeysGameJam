@@ -104,6 +104,9 @@ public class NewPausedMenuUILogic : MonoBehaviour
         {
             uiDocument.enabled = true;
 
+            HistoryUILogic.instance.stopwatch.pause();
+            HistoryUILogic.instance.plusTotalTime();
+
             subscribeToEvents();
             await Task.Delay(1); // idk why
             shaderOpenAni();
@@ -119,6 +122,9 @@ public class NewPausedMenuUILogic : MonoBehaviour
             await Task.Delay(500);
             unSubscribeFromEvents();
 
+            HistoryUILogic.instance.stopwatch.resume();
+            HistoryUILogic.instance.plusTotalTime();
+
             uiDocument.enabled = false;
         }
     }
@@ -132,6 +138,9 @@ public class NewPausedMenuUILogic : MonoBehaviour
         shaderCloseAni();
         await Task.Delay(500);
         unSubscribeFromEvents();
+
+        HistoryUILogic.instance.stopwatch.resume();
+        HistoryUILogic.instance.plusTotalTime();
 
         uiDocument.enabled = false;
     }
@@ -209,6 +218,10 @@ public class NewPausedMenuUILogic : MonoBehaviour
     void quitToMenuButtonPressed()
     {
         Debug.Log("quitToMenuButtonPressed");
+
+        HistoryUILogic.instance.stopwatch.reset();
+        HistoryUILogic.instance.plusTotalTime();
+        HistoryUILogic.instance.saveStopwatchTime();
 
         LoadingUILogic.instance.addScenesToLaod("UITest - startScene"); //scene 1
         LoadingUILogic.instance.loadScenes();

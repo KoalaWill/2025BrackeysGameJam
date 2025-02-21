@@ -232,7 +232,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: c78a3a2a3fc0aff47a28d6c962eed05d, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: fe14b94c9e3f7734ab4538c8a9d0e045, type: 3}
-  m_SortingOrder: 2
+  m_SortingOrder: 1
 --- !u!114 &443242732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,7 +854,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: c78a3a2a3fc0aff47a28d6c962eed05d, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: b7a3616c9ec73dd4f959c5ab406bb548, type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 2
 --- !u!114 &2094153272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: c78a3a2a3fc0aff47a28d6c962eed05d, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 7ead2b3dee084914dacf985d1e936be1, type: 3}
-  m_SortingOrder: 2
+  m_SortingOrder: 1
 --- !u!114 &2105435935
 MonoBehaviour:
   m_ObjectHideFlags: 0

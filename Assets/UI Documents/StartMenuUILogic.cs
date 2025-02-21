@@ -56,8 +56,13 @@ public class StartMenuUILogic : MonoBehaviour
     void startButtonPressed()
     {
         Debug.Log("startButtonPressed");
-        LoadingUILogic.instance.addScenesToLaod("UITest - gameScene"); //scene 1
+
+        LoadingUILogic.instance.addScenesToLaod("GameScene1"); //scene 1
         LoadingUILogic.instance.loadScenes();
+
+        HistoryUILogic.instance.createStopwatch();
+        HistoryUILogic.instance.plusTotalTime();
+        HistoryUILogic.instance.stopwatch.start();
     }
 
     async void startIndicatorGlow()

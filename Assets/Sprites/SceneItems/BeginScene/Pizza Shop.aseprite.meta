@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1736734cef2475e4aa3b0c4c539697b2
+guid: d9d7681876dca5b48ace853e58647fc9
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: map preview
+  - name: Pizza Shop
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.59375, y: -0.5964913}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 800
-      height: 128
-    spriteID: 25b9b4e23f6e1274fb677e60a1cbae3c
+      width: 64
+      height: 57
+    spriteID: 52b368f3439e4c24093098ec1f7df5b0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,23 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 119624348
-    name: map preview
+    guid: -755137896
+    name: Pizza Shop
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: map preview
+    - name: Pizza Shop
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 800
-        height: 128
-      spriteId: 25b9b4e23f6e1274fb677e60a1cbae3c
+        x: 42
+        y: 34
+        width: 64
+        height: 57
+      spriteId: 52b368f3439e4c24093098ec1f7df5b0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 800, y: 160}
+  canvasSize: {x: 160, y: 160}

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TarodevController
 {
@@ -15,7 +16,8 @@ namespace TarodevController
         [SerializeField] public BoxCollider2D _bodyCol;
         [SerializeField] public float spawnX;
         [SerializeField] public float spawnY;
-        
+        [SerializeField] public GameObject end;
+
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
@@ -51,6 +53,17 @@ namespace TarodevController
             if(transform.position.y < _stats.BottomBound + 0.005f)
             {
                 GameManager.instance.ChangeState(GameManager.GameState.GameOver);
+
+            }
+            if (transform.position.x > _stats.RightBound - 0.1f)
+            {
+                int temp = SceneManager.GetActiveScene().buildIndex;
+                if(temp == 3)
+                {
+                    EndingUILogic.instance.onGameOver();
+                }
+                LoadingUILogic.instance.addScenesToLaod($"GameScene{temp+1}"); //scene 2
+                LoadingUILogic.instance.loadScenes();
 
             }
         }

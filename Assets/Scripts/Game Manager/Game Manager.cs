@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
         public static GameManager instance = null;  //Static instance of GameManager which allows it to be accessed by any other script.
         private int level = 1;  //Current level number, expressed in game as "Day 1".
         private bool doingSetup = true; //Boolean to check if we're setting up board, prevent Player from moving during setup.
+    [SerializeField] public GameObject end;
 
     #region Gamestates
 
@@ -94,6 +95,7 @@ public class GameManager : MonoBehaviour
     void InitGame()
     {
         ChangeState(GameState.Playing);
+        Debug.Log(chatBoxUILogic.instance);
         chatBoxUILogic.instance.enableChatBox("pizza cooks","Chef! \nWe ran out off pizza ingridients, please go grab some for us! \nThe supermarket is just across the street. Use the garbage can-rooftop shortcut.",50);
 
     }

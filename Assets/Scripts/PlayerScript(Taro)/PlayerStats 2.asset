@@ -17,7 +17,7 @@ MonoBehaviour:
     m_Bits: 0
   SnapInput: 1
   VerticalDeadZoneThreshold: 0.3
-  HorizontalDeadZoneThreshold: 0.1
+  HorizontalDeadZoneThreshold: 0.8
   MaxSpeed: 15
   Acceleration: 90
   GroundDeceleration: 60
@@ -31,6 +31,6 @@ MonoBehaviour:
   CoyoteTime: 0.1
   JumpBuffer: 0.2
   LeftBound: -12.6
-  RightBound: 30
-  TopBound: 10
+  RightBound: 70
+  TopBound: 90000
   BottomBound: -100

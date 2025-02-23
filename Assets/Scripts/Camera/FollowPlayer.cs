@@ -8,6 +8,8 @@ public class FollowPlayer : MonoBehaviour
     public float FollowSpeed = 2f;
     public float yOffset = 1f;
     public Transform targetTRANS;
+    [SerializeField] public float CamLeftBound;
+    [SerializeField] public float CamRightBound;
     //public Transform topTriggerTRANS;
     //public Collider2D endTriggerCOLL;
     public GameObject target;
@@ -31,7 +33,7 @@ public class FollowPlayer : MonoBehaviour
         //Mathf.Min(targetTRANS.position.y, (topTriggerTRANS.position.y - camera.orthographicSize))
         //Vector3 newPos = new Vector3(targetTRANS.position.x, targetTRANS.position.y + yOffset, -10f);
         Vector3 newPos = new Vector3(
-            Mathf.Clamp(targetTRANS.position.x, -1f, 20.44f),
+            Mathf.Clamp(targetTRANS.position.x, CamLeftBound, CamRightBound),
             Mathf.Clamp(targetTRANS.position.y + yOffset, -2.5f, 999999999),
             -10f
 

@@ -19,6 +19,19 @@ public class EndingUILogic : MonoBehaviour
     private Label newRecordLabel;
     private Button backToMenuButton;
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,8 +101,8 @@ public class EndingUILogic : MonoBehaviour
         timeText = HistoryUILogic.formatTimeSpan(HistoryUILogic.instance.totalTime.TotalSeconds.ToString());
         HistoryUILogic.instance.saveRecordAndResetStopWatch();
 
-        uiDocument.enabled = true;
         subscribeToEvents();
+        uiDocument.enabled = true;
         timeLabel.text = timeText;
 
         shaderOpenAni();

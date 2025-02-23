@@ -18,6 +18,19 @@ public class chatBoxUILogic : MonoBehaviour
     private Label characterNameLabel;
     private Label chatTextLabel;
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,8 +95,8 @@ public class chatBoxUILogic : MonoBehaviour
     public async void enableChatBox(string characterName, string chatText, int msPerCha)
     {
         textFinished = false;
-        uiDocument.enabled = true;
         subscribeToEvents();
+        uiDocument.enabled = true;
 
         characterNameLabel.text = characterName;
         chatTextLabel.text = "";

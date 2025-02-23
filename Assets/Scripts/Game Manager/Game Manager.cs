@@ -3,6 +3,7 @@ using System.Collections;
 
 using System.Collections.Generic;   //Allows us to use Lists. 
 using UnityEngine.UI;   //Allows us to use UI.
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,8 +39,19 @@ public class GameManager : MonoBehaviour
                     // Pause the game
                     break;
                 case GameState.GameOver:
-                    // Show game over screen
-                    break;
+                if (SceneManager.GetActiveScene().name == "GameScene1")
+                {
+                    LoadingUILogic.instance.addScenesToLaod("GameScene2"); //scene 2
+                    LoadingUILogic.instance.loadScenes();
+                }
+                else
+                {
+                    Debug.Log("DIED");
+                    LoadingUILogic.instance.addScenesToLaod("GameScene1"); //scene 1
+                    LoadingUILogic.instance.loadScenes();
+                }
+                // Show game over screen
+                break;
             }
         }
 
@@ -89,6 +101,10 @@ public class GameManager : MonoBehaviour
         if (!doingSetup)
             //If any of these are true, return and do not start MoveEnemies. 
             return;
+        if(currentState != GameState.Playing)
+        {
+            Time.timeScale = 0f;
+        }
         if(Input.GetKeyDown(KeyCode.Escape)){
             if(currentState == GameState.Playing){
                 ChangeState(GameState.Paused);

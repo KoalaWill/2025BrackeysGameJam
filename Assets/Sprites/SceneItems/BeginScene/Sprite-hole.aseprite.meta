@@ -118,10 +118,47 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData: []
+  animatedSpriteImportData:
+  - name: Sprite-hole
+    originalName: 
+    pivot: {x: 3.772727, y: -46.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 22
+      height: 8
+    spriteID: 630e5aaeb6afd4242836939bfae234bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
-  asepriteLayers: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -523791192
+    name: Sprite-hole
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Sprite-hole
+      frameIndex: 0
+      cellRect:
+        x: 217
+        y: 375
+        width: 22
+        height: 8
+      spriteId: 630e5aaeb6afd4242836939bfae234bf
+    linkedCells: []
+    parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 0, y: 0}
+  canvasSize: {x: 600, y: 600}

@@ -39,6 +39,12 @@ namespace TarodevController
             if(GameManager.instance.currentState != GameManager.GameState.Playing) return;
             _time += Time.deltaTime;
             GatherInput();
+
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x, _stats.LeftBound, _stats.RightBound),
+                Mathf.Clamp(transform.position.y, _stats.BottomBound, _stats.TopBound),
+                transform.position.z
+            );
         }
 
         #region Input

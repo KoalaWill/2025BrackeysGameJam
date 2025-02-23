@@ -29,7 +29,14 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         //Mathf.Min(targetTRANS.position.y, (topTriggerTRANS.position.y - camera.orthographicSize))
-        Vector3 newPos = new Vector3(targetTRANS.position.x, targetTRANS.position.y + yOffset, -10f);
+        //Vector3 newPos = new Vector3(targetTRANS.position.x, targetTRANS.position.y + yOffset, -10f);
+        Vector3 newPos = new Vector3(
+            Mathf.Clamp(targetTRANS.position.x, -1f, 20.44f),
+            Mathf.Clamp(targetTRANS.position.y + yOffset, -2.5f, 10.4f),
+            -10f
+
+        );
+
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);    
         
     }

@@ -32,7 +32,7 @@ public class FollowPlayer : MonoBehaviour
         //Vector3 newPos = new Vector3(targetTRANS.position.x, targetTRANS.position.y + yOffset, -10f);
         Vector3 newPos = new Vector3(
             Mathf.Clamp(targetTRANS.position.x, -1f, 20.44f),
-            Mathf.Clamp(targetTRANS.position.y + yOffset, -2.5f, 10.4f),
+            Mathf.Clamp(targetTRANS.position.y + yOffset, -2.5f, 999999999),
             -10f
 
         );

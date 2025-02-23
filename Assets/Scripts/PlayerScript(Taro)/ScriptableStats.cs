@@ -54,6 +54,6 @@ namespace TarodevController
         public float JumpBuffer = .2f;
 
         [Header("BOUNDS")] [Tooltip("The maximum height and width the player can reach")]
-        public float LeftBound = -10f, RightBound = 10f, TopBound = 10f, BottomBound = -10f;
+        public float LeftBound = -12.6f, RightBound = 30f, TopBound = 10f, BottomBound = -10f;
     }
 }

@@ -203,7 +203,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: c78a3a2a3fc0aff47a28d6c962eed05d, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: a765834b3591d19469f75680e25e04b3, type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 3
 --- !u!4 &29037611
 Transform:
   m_ObjectHideFlags: 0
@@ -12686,6 +12686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showStopWatch: 0
+  resetPlayerPrefsToggle: 0
   uiDocument: {fileID: 1758818957}
 --- !u!114 &1758818957
 MonoBehaviour:

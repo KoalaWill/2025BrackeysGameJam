@@ -67,5 +67,6 @@ public class TimerUILogic : MonoBehaviour
     {
         HistoryUILogic.instance.plusTotalTime();
         timerLabel.text = HistoryUILogic.formatTimeSpan(HistoryUILogic.instance.totalTime.TotalSeconds.ToString());
+        personalBestTimeLabel.text = HistoryUILogic.formatTimeSpan(HistoryUILogic.instance.personalBestTime);
     }
 }

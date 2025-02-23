@@ -24,7 +24,7 @@ public class HistoryUILogic : MonoBehaviour
     private Label completedTimesLable;
     private Label averageLable;
 
-    private string personalBestTime;
+    public string personalBestTime;
     private int completedTimes;
     private string averageTime;
 

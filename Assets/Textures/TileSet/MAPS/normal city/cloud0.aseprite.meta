@@ -121,16 +121,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: cloud0
     originalName: 
-    pivot: {x: 0.5, y: -0.53846157}
+    pivot: {x: 0.5045045, y: -0.089999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 40
-      height: 39
-    spriteID: 35640349128951e42862c807f651a962
+      width: 111
+      height: 100
+    spriteID: 62b191d46a41a9b409b7223841fee8a0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,14 +151,14 @@ ScriptedImporter:
     - name: cloud0
       frameIndex: 0
       cellRect:
-        x: 20
-        y: 21
-        width: 40
-        height: 39
-      spriteId: 35640349128951e42862c807f651a962
+        x: 0
+        y: 9
+        width: 111
+        height: 100
+      spriteId: 62b191d46a41a9b409b7223841fee8a0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 80, y: 80}
+  canvasSize: {x: 112, y: 112}

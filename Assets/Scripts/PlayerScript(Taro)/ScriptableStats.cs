@@ -52,5 +52,8 @@ namespace TarodevController
 
         [Tooltip("The amount of time we buffer a jump. This allows jump input before actually hitting the ground")]
         public float JumpBuffer = .2f;
+
+        [Header("BOUNDS")] [Tooltip("The maximum height and width the player can reach")]
+        public float LeftBound = -12.6f, RightBound = 30f, TopBound = 10f, BottomBound = -10f;
     }
 }

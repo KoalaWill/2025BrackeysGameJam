@@ -4,18 +4,15 @@ using UnityEngine;
 namespace TarodevController
 {
     /// <summary>
-    /// Hey!
-    /// Tarodev here. I built this controller as there was a severe lack of quality & free 2D controllers out there.
-    /// I have a premium version on Patreon, which has every feature you'd expect from a polished controller. Link: https://www.patreon.com/tarodev
-    /// You can play and compete for best times here: https://tarodev.itch.io/extended-ultimate-2d-controller
-    /// If you hve any questions or would like to brag about your score, come to discord: https://discord.gg/tarodev
+    /// credit tp Tarodev
     /// </summary>
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour, IPlayerController
     {
         [SerializeField] private ScriptableStats _stats;
         private Rigidbody2D _rb;
-        private BoxCollider2D _col;
+        [SerializeField] public BoxCollider2D _headCol;
+        [SerializeField] public BoxCollider2D _bodyCol;
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
@@ -32,8 +29,7 @@ namespace TarodevController
 
         private void Awake()
         {
-            _rb = GetComponent<Rigidbody2D>();
-            _col = GetComponent<BoxCollider2D>();
+            _rb = GetComponent<Rigidbody2D>();;
 
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
@@ -43,6 +39,12 @@ namespace TarodevController
             if(GameManager.instance.currentState != GameManager.GameState.Playing) return;
             _time += Time.deltaTime;
             GatherInput();
+
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x, _stats.LeftBound, _stats.RightBound),
+                Mathf.Clamp(transform.position.y, _stats.BottomBound, _stats.TopBound),
+                transform.position.z
+            );
         }
 
         #region Input
@@ -92,8 +94,8 @@ namespace TarodevController
             Physics2D.queriesStartInColliders = false;
 
             // Ground and Ceiling
-            bool groundHit = Physics2D.BoxCast(_col.bounds.center, _col.size, 0, Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
-            bool ceilingHit = Physics2D.BoxCast(_col.bounds.center, _col.size, 0, Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
+            bool groundHit = Physics2D.BoxCast(_bodyCol.bounds.center, _bodyCol.size, 0, Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
+            bool ceilingHit = Physics2D.BoxCast(_headCol.bounds.center, _headCol.size, 0, Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
             // Hit a Ceiling
             if (ceilingHit) _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);

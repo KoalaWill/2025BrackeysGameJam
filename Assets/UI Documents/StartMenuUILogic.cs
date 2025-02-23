@@ -57,6 +57,7 @@ public class StartMenuUILogic : MonoBehaviour
     {
         Debug.Log("startButtonPressed");
 
+        GameManager.instance.ChangeState(GameManager.GameState.Playing);
         LoadingUILogic.instance.addScenesToLaod("GameScene1"); //scene 1
         LoadingUILogic.instance.loadScenes();
 

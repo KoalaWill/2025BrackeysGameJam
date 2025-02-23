@@ -104,6 +104,7 @@ public class NewPausedMenuUILogic : MonoBehaviour
         {
             uiDocument.enabled = true;
 
+            GameManager.instance.ChangeState(GameManager.GameState.Paused);
             HistoryUILogic.instance.stopwatch.pause();
             HistoryUILogic.instance.plusTotalTime();
 
@@ -219,6 +220,7 @@ public class NewPausedMenuUILogic : MonoBehaviour
     {
         Debug.Log("quitToMenuButtonPressed");
 
+        GameManager.instance.ChangeState(GameManager.GameState.MainMenu);
         HistoryUILogic.instance.stopwatch.reset();
         HistoryUILogic.instance.plusTotalTime();
         HistoryUILogic.instance.saveStopwatchTime();

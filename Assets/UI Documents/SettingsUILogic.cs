@@ -26,9 +26,9 @@ public class SettingsUILogic : MonoBehaviour
     private Button jumpKeyButton;
     private Button interactKeyButton;
     private Event keyEvent;
-    private KeyCode leftKey {get; set;}
-    private KeyCode rightKey {get; set;}
-    private KeyCode jumpKey {get; set;}
+    public KeyCode leftKey {get; set;}
+    public KeyCode rightKey {get; set;}
+    public KeyCode jumpKey {get; set;}
     public KeyCode interactKey {get; set;}
     private KeyCode newKey;
     private string buttonText;

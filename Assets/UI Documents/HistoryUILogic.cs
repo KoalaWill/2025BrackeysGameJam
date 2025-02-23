@@ -117,9 +117,9 @@ public class HistoryUILogic : MonoBehaviour
 
     void setPlayerPrefsValue()
     {
-        personalBestLable.text = personalBestTime == "0" ? "--:--:---" : formatTimeSpan(personalBestTime);
+        personalBestLable.text = personalBestTime == "0" ? "00:00:000" : formatTimeSpan(personalBestTime);
         completedTimesLable.text = completedTimes.ToString();
-        averageLable.text = averageTime == "0" ? "--:--:---" :  formatTimeSpan(averageTime);
+        averageLable.text = averageTime == "0" ? "00:00:000" :  formatTimeSpan(averageTime);
     }
 
     async void escapePressed()

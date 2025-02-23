@@ -8,7 +8,7 @@ public class NewPausedMenuUILogic : MonoBehaviour
 {
     //private bool eventsSubscribed;
 
-    private UIDocument uiDocument;
+    public UIDocument uiDocument;
     private VisualElement shader;
     private Button resumeButton;
     private VisualElement pausedIcon;
@@ -104,7 +104,7 @@ public class NewPausedMenuUILogic : MonoBehaviour
         {
             uiDocument.enabled = true;
 
-            GameManager.instance.ChangeState(GameManager.GameState.Paused);
+            GameManager.instance.ChangeState(GameManager.GameState.Paused); 
             HistoryUILogic.instance.stopwatch.pause();
             HistoryUILogic.instance.plusTotalTime();
 
@@ -123,6 +123,7 @@ public class NewPausedMenuUILogic : MonoBehaviour
             await Task.Delay(500);
             unSubscribeFromEvents();
 
+            GameManager.instance.ChangeState(GameManager.GameState.Playing);
             HistoryUILogic.instance.stopwatch.resume();
             HistoryUILogic.instance.plusTotalTime();
 
@@ -134,6 +135,7 @@ public class NewPausedMenuUILogic : MonoBehaviour
     {
         Debug.Log("resumeButtonPressed");
 
+        GameManager.instance.ChangeState(GameManager.GameState.Playing);
         pausedIconAndLabelCloseAni();
         await Task.Delay(1100);
         shaderCloseAni();

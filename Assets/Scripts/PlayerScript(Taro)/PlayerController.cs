@@ -53,9 +53,11 @@ namespace TarodevController
         {
             _frameInput = new FrameInput
             {
-                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W),
-                JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W),
-                Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
+                //JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W),
+                //JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W),
+                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(SettingsUILogic.instance.jumpKey),
+                JumpHeld = Input.GetButton("Jump") || Input.GetKey(SettingsUILogic.instance.jumpKey),
+                Move = new Vector2((Input.GetKey(SettingsUILogic.instance.rightKey) ? 1 : 0) - (Input.GetKey(SettingsUILogic.instance.leftKey) ? 1 : 0), 0)
             };
 
             if (_stats.SnapInput)

@@ -112,41 +112,44 @@ public class InputOverlayUILogic : MonoBehaviour
 
     void refreshKeyStatus()
     {
-        if (Input.GetKey(jumpKey))
+        if(GameManager.instance.currentState == GameManager.GameState.Playing)
         {
-            jumpKeyDisplay.style.backgroundColor = new Color(1f, 1f, 1f, 180f / 255f); ;
-            jumpKeyLabel.style.color = new Color(0f, 0f, 0f);
-            jumpKeyBind.style.color = new Color(0f, 0f, 0f);
-        }
-        else
-        {
-            jumpKeyDisplay.style.backgroundColor = new Color(0f, 0f, 0f, 70f / 255f);
-            jumpKeyLabel.style.color = new Color(1f, 1f, 1f);
-            jumpKeyBind.style.color = new Color(1f, 1f, 1f);
-        }
-        if (Input.GetKey(leftKey))
-        {
-            leftKeyDisplay.style.backgroundColor = new Color(1f, 1f, 1f, 180f / 255f); ;
-            leftKeyLabel.style.color = new Color(0f, 0f, 0f);
-            leftKeyBind.style.color = new Color(0f, 0f, 0f);
-        }
-        else
-        {
-            leftKeyDisplay.style.backgroundColor = new Color(0f, 0f, 0f, 70f / 255f);
-            leftKeyLabel.style.color = new Color(1f, 1f, 1f);
-            leftKeyBind.style.color = new Color(1f, 1f, 1f);
-        }
-        if (Input.GetKey(rightKey))
-        {
-            rightKeyDisplay.style.backgroundColor = new Color(1f, 1f, 1f, 180f / 255f); ;
-            rightKeyLabel.style.color = new Color(0f, 0f, 0f);
-            rightKeyBind.style.color = new Color(0f, 0f, 0f);
-        }
-        else
-        {
-            rightKeyDisplay.style.backgroundColor = new Color(0f, 0f, 0f, 70f / 255f);
-            rightKeyLabel.style.color = new Color(1f, 1f, 1f);
-            rightKeyBind.style.color = new Color(1f, 1f, 1f);
+            if (Input.GetKey(jumpKey))
+            {
+                jumpKeyDisplay.style.backgroundColor = new Color(1f, 1f, 1f, 180f / 255f); ;
+                jumpKeyLabel.style.color = new Color(0f, 0f, 0f);
+                jumpKeyBind.style.color = new Color(0f, 0f, 0f);
+            }
+            else
+            {
+                jumpKeyDisplay.style.backgroundColor = new Color(0f, 0f, 0f, 70f / 255f);
+                jumpKeyLabel.style.color = new Color(1f, 1f, 1f);
+                jumpKeyBind.style.color = new Color(1f, 1f, 1f);
+            }
+            if (Input.GetKey(leftKey))
+            {
+                leftKeyDisplay.style.backgroundColor = new Color(1f, 1f, 1f, 180f / 255f); ;
+                leftKeyLabel.style.color = new Color(0f, 0f, 0f);
+                leftKeyBind.style.color = new Color(0f, 0f, 0f);
+            }
+            else
+            {
+                leftKeyDisplay.style.backgroundColor = new Color(0f, 0f, 0f, 70f / 255f);
+                leftKeyLabel.style.color = new Color(1f, 1f, 1f);
+                leftKeyBind.style.color = new Color(1f, 1f, 1f);
+            }
+            if (Input.GetKey(rightKey))
+            {
+                rightKeyDisplay.style.backgroundColor = new Color(1f, 1f, 1f, 180f / 255f); ;
+                rightKeyLabel.style.color = new Color(0f, 0f, 0f);
+                rightKeyBind.style.color = new Color(0f, 0f, 0f);
+            }
+            else
+            {
+                rightKeyDisplay.style.backgroundColor = new Color(0f, 0f, 0f, 70f / 255f);
+                rightKeyLabel.style.color = new Color(1f, 1f, 1f);
+                rightKeyBind.style.color = new Color(1f, 1f, 1f);
+            }
         }
     }
 }

@@ -13,6 +13,9 @@ namespace TarodevController
         private Rigidbody2D _rb;
         [SerializeField] public BoxCollider2D _headCol;
         [SerializeField] public BoxCollider2D _bodyCol;
+        [SerializeField] public float spawnX;
+        [SerializeField] public float spawnY;
+        
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
@@ -30,7 +33,7 @@ namespace TarodevController
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
-
+            transform.position = new Vector3(spawnX, spawnY);
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
 

@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
                 {
                     LoadingUILogic.instance.addScenesToLaod("GameScene2"); //scene 2
                     LoadingUILogic.instance.loadScenes();
+                    ChangeState(GameState.Playing);
+
                 }
                 else
                 {
@@ -92,6 +94,8 @@ public class GameManager : MonoBehaviour
     void InitGame()
     {
         ChangeState(GameState.Playing);
+        chatBoxUILogic.instance.enableChatBox("pizza cooks","Chef! \nWe ran out off pizza ingridients, please go grab some for us! \nThe supermarket is just across the street. Use the garbage can-rooftop shortcut.",50);
+
     }
 
     //Update is called every frame. 

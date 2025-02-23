@@ -12688,6 +12688,7 @@ MonoBehaviour:
   showStopWatch: 0
   resetPlayerPrefsToggle: 0
   uiDocument: {fileID: 1758818957}
+  personalBestTime: 
 --- !u!114 &1758818957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13267,6 +13268,14 @@ PrefabInstance:
     - target: {fileID: 1537649359666970430, guid: 1a7a01303cf36af40b439dc2a7dab7fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599106600902449773, guid: 1a7a01303cf36af40b439dc2a7dab7fe, type: 3}
+      propertyPath: spawnX
+      value: -6.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599106600902449773, guid: 1a7a01303cf36af40b439dc2a7dab7fe, type: 3}
+      propertyPath: spawnY
+      value: -5.278855
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

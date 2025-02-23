@@ -542,6 +542,14 @@ PrefabInstance:
       propertyPath: _stats
       value: 
       objectReference: {fileID: 11400000, guid: ee1737f6f8a92f8439292582157c2e52, type: 2}
+    - target: {fileID: 5599106600902449773, guid: 1a7a01303cf36af40b439dc2a7dab7fe, type: 3}
+      propertyPath: spawnX
+      value: -6.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599106600902449773, guid: 1a7a01303cf36af40b439dc2a7dab7fe, type: 3}
+      propertyPath: spawnY
+      value: 65.92
+      objectReference: {fileID: 0}
     - target: {fileID: 9180584479208001541, guid: 1a7a01303cf36af40b439dc2a7dab7fe, type: 3}
       propertyPath: m_LocalPosition.y
       value: 16.9
@@ -138170,6 +138178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showStopWatch: 0
+  resetPlayerPrefsToggle: 0
   uiDocument: {fileID: 1934173774}
 --- !u!114 &1934173774
 MonoBehaviour:

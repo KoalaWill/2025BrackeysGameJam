@@ -29,7 +29,7 @@ namespace TarodevController
 
         private void Awake()
         {
-            _rb = GetComponent<Rigidbody2D>();;
+            _rb = GetComponent<Rigidbody2D>();
 
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
@@ -45,6 +45,11 @@ namespace TarodevController
                 Mathf.Clamp(transform.position.y, _stats.BottomBound, _stats.TopBound),
                 transform.position.z
             );
+            if(transform.position.y < _stats.BottomBound + 0.005f)
+            {
+                GameManager.instance.ChangeState(GameManager.GameState.GameOver);
+
+            }
         }
 
         #region Input

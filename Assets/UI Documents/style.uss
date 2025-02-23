@@ -629,3 +629,16 @@
     opacity: 0;
     transition-duration: 0.1s;
 }
+
+.endingShaderDefault {
+    transition-duration: 5s;
+    flex-direction: column;
+    align-self: auto;
+    align-items: center;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.endingShaderOff {
+    opacity: 0;
+}

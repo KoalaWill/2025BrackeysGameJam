@@ -14,6 +14,7 @@ public class HistoryUILogic : MonoBehaviour
     public static HistoryUILogic instance;
 
     public bool showStopWatch = false;
+    public bool resetPlayerPrefsToggle = false;
     private bool eventsSubscribed = false;
 
     public UIDocument uiDocument;
@@ -63,6 +64,8 @@ public class HistoryUILogic : MonoBehaviour
         {
             subscribeToEvents();
             shaderOpenAni();
+            getPlayerPrefs();
+            setPlayerPrefsValue();
         }
         else if (!uiDocument.enabled && eventsSubscribed)
             unSubscribeFromEvents();
@@ -70,6 +73,12 @@ public class HistoryUILogic : MonoBehaviour
         if (showStopWatch)
         {
             plusTotalTime();
+        }
+
+        if (resetPlayerPrefsToggle)
+        {
+            resetPlayerPrefs();
+            resetPlayerPrefsToggle = false;
         }
     }
 
@@ -117,9 +126,16 @@ public class HistoryUILogic : MonoBehaviour
 
     void setPlayerPrefsValue()
     {
-        personalBestLable.text = personalBestTime == "0" ? "00:00:000" : formatTimeSpan(personalBestTime);
+        personalBestLable.text = personalBestTime == "0" ? "--:--:---" : formatTimeSpan(personalBestTime);
         completedTimesLable.text = completedTimes.ToString();
-        averageLable.text = averageTime == "0" ? "00:00:000" :  formatTimeSpan(averageTime);
+        averageLable.text = averageTime == "0" ? "--:--:---" :  formatTimeSpan(averageTime);
+    }
+
+    void resetPlayerPrefs()
+    {
+        PlayerPrefs.SetString("personalBestTime", "0");
+        PlayerPrefs.SetInt("completedTimes", 0);
+        PlayerPrefs.SetString("averageTime", "0");
     }
 
     async void escapePressed()
@@ -168,19 +184,19 @@ public class HistoryUILogic : MonoBehaviour
         return $"{timeSpan.Minutes:00}:{timeSpan.Seconds:00}:{timeSpan.Milliseconds:000}";
     }
 
-    void saveRecordAndResetStopWatch()
+    public void saveRecordAndResetStopWatch()
     {
         plusTotalTime();
         PlayerPrefs.SetInt("completedTimes", PlayerPrefs.GetInt("completedTimes") + 1);
         double sum = (totalTime + savedTime).TotalMilliseconds;
-        if (sum < double.Parse(personalBestTime))
+        if (sum < double.Parse(personalBestTime) || double.Parse(personalBestTime) == 0)
         {
             PlayerPrefs.SetString("personalBestTime", sum.ToString());
         }
         PlayerPrefs.SetString("averageTime", ((double.Parse(averageTime) * completedTimes + sum) / (completedTimes + 1)).ToString());
 
-        getPlayerPrefs();
-        setPlayerPrefsValue();
+        //getPlayerPrefs();
+        //setPlayerPrefsValue();
         stopwatch.reset();
     }
 }

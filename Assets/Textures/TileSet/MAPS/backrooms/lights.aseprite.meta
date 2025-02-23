@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 359aeb9a7dc89ea4a94bbc7654bb608a
+guid: 51699d387f1344a448c4285666aec085
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: cloud0
+  - name: lights
     originalName: 
-    pivot: {x: 0.5045045, y: -0.089999996}
+    pivot: {x: 0.48275867, y: -15}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 111
-      height: 100
-    spriteID: 482f9d8f109319047bcc217a05bf1fbe
+      width: 29
+      height: 3
+    spriteID: bf17b8a5eaec6d348822ad89d7487e43
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,23 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -557873483
-    name: cloud0
+    guid: -48271063
+    name: lights
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: cloud0
+    - name: lights
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 9
-        width: 111
-        height: 100
-      spriteId: 482f9d8f109319047bcc217a05bf1fbe
+        x: 10
+        y: 45
+        width: 29
+        height: 3
+      spriteId: bf17b8a5eaec6d348822ad89d7487e43
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 112, y: 112}
+  canvasSize: {x: 48, y: 48}

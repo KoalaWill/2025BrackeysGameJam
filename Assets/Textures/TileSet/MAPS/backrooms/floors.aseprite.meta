@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 359aeb9a7dc89ea4a94bbc7654bb608a
+guid: e40b11d35c066ba47b736636ddfa8680
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: cloud0
+  - name: floors
     originalName: 
-    pivot: {x: 0.5045045, y: -0.089999996}
+    pivot: {x: 0.5, y: -0.74545455}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 111
-      height: 100
-    spriteID: 482f9d8f109319047bcc217a05bf1fbe
+      width: 112
+      height: 55
+    spriteID: 6130fecfdc2f9984a80c04e0dd54855d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -557873483
-    name: cloud0
+    guid: -1024583429
+    name: floors
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: cloud0
+    - name: floors
       frameIndex: 0
       cellRect:
         x: 0
-        y: 9
-        width: 111
-        height: 100
-      spriteId: 482f9d8f109319047bcc217a05bf1fbe
+        y: 41
+        width: 112
+        height: 55
+      spriteId: 6130fecfdc2f9984a80c04e0dd54855d
     linkedCells: []
     parentIndex: -1
   platformSettings: []

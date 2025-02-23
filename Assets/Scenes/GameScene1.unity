@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite--caution
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 3eb6cfc5926cc2f4493bb523dd10ceb4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3eb6cfc5926cc2f4493bb523dd10ceb4, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -408,7 +412,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 6819682156634765191, guid: 5bc4746fa2799aa46ab3d8e2d2a98841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

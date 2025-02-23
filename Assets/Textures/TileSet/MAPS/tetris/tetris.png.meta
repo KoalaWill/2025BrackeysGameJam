@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 875554533138bf640b16d82f113605c6
+guid: 39e3b205c99b65d4dbf998cd129d36b0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 63
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lights_0
+      name: tetris_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 16
-        height: 16
+        y: 0
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 572c869ff765a2d469fa4a88bb12ee26
-      internalID: -205307109
+      spriteID: 9e06a5d3c24c09f4abad72a51f1f8f21
+      internalID: 550643682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lights_1
+      name: tetris_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
+        x: 50
+        y: 0
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 388f904473b62aa49a30eb7729f101e0
-      internalID: -1552810697
+      spriteID: 99b118f5db0ba83428b3b77ba873bc69
+      internalID: -1947794216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lights_2
+      name: tetris_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
+        x: 100
+        y: 0
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9a4df1a973b0f3499b990da1a2b5e8a
-      internalID: 194935711
+      spriteID: ac3a6b3565737ef4e92869c39d6bc8db
+      internalID: 1961754635
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lights_0: -205307109
-      lights_1: -1552810697
-      lights_2: 194935711
+      tetris_0: 550643682
+      tetris_1: -1947794216
+      tetris_2: 1961754635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

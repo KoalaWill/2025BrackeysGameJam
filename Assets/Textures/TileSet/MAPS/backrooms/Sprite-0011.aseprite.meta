@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 48ab0a0872852384b927a161bf4a424f
+guid: ba19dd00b86982b459d2a77064220f15
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: tetris
+  - name: Sprite-0011
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.78125, y: -5.25}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 150
-      height: 50
-    spriteID: eaca58218c24f054f9c5c7a8cc19f5b5
+      width: 1024
+      height: 256
+    spriteID: 54c89d9c919cc3244a8c965bd762f9e0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,23 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1372302083
-    name: tetris
+    guid: 462012132
+    name: Sprite-0011
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: tetris
+    - name: Sprite-0011
       frameIndex: 0
       cellRect:
         x: 0
-        y: 0
-        width: 150
-        height: 50
-      spriteId: eaca58218c24f054f9c5c7a8cc19f5b5
+        y: 1344
+        width: 1024
+        height: 256
+      spriteId: 54c89d9c919cc3244a8c965bd762f9e0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 150, y: 50}
+  canvasSize: {x: 1600, y: 1600}

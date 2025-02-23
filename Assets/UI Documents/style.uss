@@ -614,3 +614,18 @@
     align-items: center;
     justify-content: center;
 }
+
+.chatBoxShaderDefault {
+    transition-duration: 0.1s;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    align-items: center;
+    align-self: flex-end;
+    background-image: url('project://database/Assets/UI%20sprites/blackGradiant.png?fileID=2800000&guid=48eb7effbbacd4e46840f101299ad94d&type=3#blackGradiant');
+}
+
+.chatBoxShaderOff {
+    opacity: 0;
+    transition-duration: 0.1s;
+}

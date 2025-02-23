@@ -82,7 +82,7 @@ public class EndingUILogic : MonoBehaviour
         LoadingUILogic.instance.loadScenes();
     }
 
-    async void onGameOver()
+    public async void onGameOver()
     {
         GameManager.instance.ChangeState(GameManager.GameState.GameOver);
         timeText = HistoryUILogic.formatTimeSpan(HistoryUILogic.instance.totalTime.TotalSeconds.ToString());

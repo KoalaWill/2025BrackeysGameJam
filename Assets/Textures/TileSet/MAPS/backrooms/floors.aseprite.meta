@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: floors
     originalName: 
-    pivot: {x: 0.71428573, y: -1.1818182}
+    pivot: {x: 0.5833333, y: -0.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 56
-      height: 33
+      width: 96
+      height: 80
     spriteID: 6130fecfdc2f9984a80c04e0dd54855d
     spriteBone: []
     spriteOutline: []
@@ -151,10 +151,10 @@ ScriptedImporter:
     - name: floors
       frameIndex: 0
       cellRect:
-        x: 16
-        y: 39
-        width: 56
-        height: 33
+        x: 0
+        y: 16
+        width: 96
+        height: 80
       spriteId: 6130fecfdc2f9984a80c04e0dd54855d
     linkedCells: []
     parentIndex: -1

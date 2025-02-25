@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
         public static GameManager instance = null;  //Static instance of GameManager which allows it to be accessed by any other script.
-        public int level = 0;  //Current level number, expressed in game as "Day 1".
+        [SerializeField]public int level = 0;  //Current level number, expressed in game as "Day 1".
         private bool doingSetup = true; //Boolean to check if we're setting up board, prevent Player from moving during setup.
-    [SerializeField] public GameObject end;
+
 
     #region Gamestates
 
@@ -20,7 +20,9 @@ public class GameManager : MonoBehaviour
             MainMenu,
             Playing,
             Paused,
-            GameOver
+            GameOver,
+            EndLevel,
+
         }
         public GameState currentState;
 
@@ -33,12 +35,15 @@ public class GameManager : MonoBehaviour
                 case GameState.MainMenu:
                     // Initialize main menu
                     break;
+
                 case GameState.Playing:
                     // Start gameplay
                     break;
+
                 case GameState.Paused:
                     // Pause the game
                     break;
+
                 case GameState.GameOver:
                 if (SceneManager.GetActiveScene().name == "GameScene1")
                 {
@@ -55,6 +60,22 @@ public class GameManager : MonoBehaviour
                 }
                 // Show game over screen
                 break;
+
+                case GameState.EndLevel:
+                    // Show success screen or go to next scene
+                    if(level == 3)
+                    {
+                        EndingUILogic.instance.onGameOver();
+                        ChangeState(GameState.Paused);
+                        GameObject EndBackground = GameObject.Find("EndBackground");
+                        EndBackground.SetActive(true);
+                    }
+                    else
+                    {
+                        LoadingUILogic.instance.addScenesToLaod($"GameScene{level + 1}"); //scene 2
+                        LoadingUILogic.instance.loadScenes();
+                    }
+                    break;
             }
         }
 
@@ -99,7 +120,9 @@ public class GameManager : MonoBehaviour
         Debug.Log(chatBoxUILogic.instance);
         if(level == 1)
         {
-            chatBoxUILogic.instance.enableChatBox("pizza cooks", "Chef! \nWe ran out off pizza ingridients, please grab some for us! \nThe supermarket is just across the street. You can use the garbage-can-to-rooftop shortcut. \nNothing can go wrong, right?", 50);
+            Debug.Log($"current level is{level}");
+            chatBoxUILogic.instance.enableChatBox("pizza cooks", "Chef! \nWe ran out off pizza ingridients, please grab some for us! \nThe supermarket is just across the street. You can use the garbage-can-to-rooftop shortcut.\nNothing can go wrong, right?", 50);
+            //chatBoxUILogic.instance.enableChatBox("you", "Sure thing! \nNothing can go wrong, right?",20);
         }
 
     }

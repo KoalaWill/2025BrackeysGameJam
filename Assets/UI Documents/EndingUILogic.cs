@@ -99,7 +99,7 @@ public class EndingUILogic : MonoBehaviour
     public async void onGameOver()
     {
         aniFinished = false;
-        GameManager.instance.ChangeState(GameManager.GameState.GameOver);
+        //GameManager.instance.ChangeState(GameManager.GameState.GameOver);
         timeText = HistoryUILogic.formatTimeSpan(HistoryUILogic.instance.totalTime.TotalSeconds.ToString());
         HistoryUILogic.instance.saveRecordAndResetStopWatch();
 

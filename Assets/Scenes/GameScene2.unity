@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 68861241}
   - component: {fileID: 68861240}
   m_Layer: 0
-  m_Name: abstract-wrapping-paper-rolling-on-a-black-background-concept-of-gifts-and-celebrations-design-two-rolls-of-decorative-gift-paper-in-motion-video
+  m_Name: black-background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 21d54d73b9a3fda48a129cce78c77e5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c392c5a159bb1a4f8b158bec4cea47f, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.85490197}
   m_FlipX: 0
   m_FlipY: 0

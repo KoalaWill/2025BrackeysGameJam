@@ -67,8 +67,6 @@ public class GameManager : MonoBehaviour
                     {
                         EndingUILogic.instance.onGameOver();
                         ChangeState(GameState.Paused);
-                        GameObject EndBackground = GameObject.Find("EndBackground");
-                        EndBackground.SetActive(true);
                     }
                     else
                     {

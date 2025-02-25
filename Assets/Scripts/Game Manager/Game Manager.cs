@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
         public static GameManager instance = null;  //Static instance of GameManager which allows it to be accessed by any other script.
-        private int level = 0;  //Current level number, expressed in game as "Day 1".
+        public int level = 0;  //Current level number, expressed in game as "Day 1".
         private bool doingSetup = true; //Boolean to check if we're setting up board, prevent Player from moving during setup.
     [SerializeField] public GameObject end;
 
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
     //This is called each time a scene is loaded. 
     void OnLevelWasLoaded(int index)
     {
-        //Add one to our level number. 
+        //Update level number. 
         level = SceneManager.GetActiveScene().buildIndex > 0? SceneManager.GetActiveScene().buildIndex  :  -1;
         Debug.Log($"current level is{level}");
         //Call InitGame to initialize our level. 
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(chatBoxUILogic.instance);
         if(level == 1)
         {
-            chatBoxUILogic.instance.enableChatBox("pizza cooks", "Chef! \nWe ran out off pizza ingridients, please grab some for us! \nThe supermarket is just across the street. You can use the garbage-can-to-rooftop shortcut. Nothing can go wrong, right?", 50);
+            chatBoxUILogic.instance.enableChatBox("pizza cooks", "Chef! \nWe ran out off pizza ingridients, please grab some for us! \nThe supermarket is just across the street. You can use the garbage-can-to-rooftop shortcut. \nNothing can go wrong, right?", 50);
         }
 
     }

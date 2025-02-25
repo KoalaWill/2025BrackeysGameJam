@@ -57,14 +57,16 @@ namespace TarodevController
             }
             if (transform.position.x > _stats.RightBound - 0.1f)
             {
-                int temp = SceneManager.GetActiveScene().buildIndex;
-                if(temp == 3)
+                int level = GameManager.instance.level;
+                if(level == 3)
                 {
                     EndingUILogic.instance.onGameOver();
                 }
-                LoadingUILogic.instance.addScenesToLaod($"GameScene{temp+1}"); //scene 2
-                LoadingUILogic.instance.loadScenes();
-
+                else
+                {
+                    LoadingUILogic.instance.addScenesToLaod($"GameScene{level + 1}"); //scene 2
+                    LoadingUILogic.instance.loadScenes();
+                }
             }
         }
 

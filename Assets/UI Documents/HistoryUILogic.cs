@@ -188,7 +188,8 @@ public class HistoryUILogic : MonoBehaviour
     {
         plusTotalTime();
         PlayerPrefs.SetInt("completedTimes", PlayerPrefs.GetInt("completedTimes") + 1);
-        double sum = (totalTime + savedTime).TotalMilliseconds;
+        double sum = (totalTime + savedTime).TotalSeconds;
+        UnityEngine.Debug.Log(sum);
         if (sum < double.Parse(personalBestTime) || double.Parse(personalBestTime) == 0)
         {
             PlayerPrefs.SetString("personalBestTime", sum.ToString());

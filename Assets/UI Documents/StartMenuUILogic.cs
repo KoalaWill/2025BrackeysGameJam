@@ -132,5 +132,6 @@ public class StartMenuUILogic : MonoBehaviour
     void quitButtonPressed()
     {
         Debug.Log("quitButtonPressed");
+        Application.Quit();
     }
 }

@@ -235,5 +235,6 @@ public class NewPausedMenuUILogic : MonoBehaviour
     void quitToDesktopButtonPressed()
     {
         Debug.Log("quitToDesktopButtonPressed");
+        Application.Quit();
     }
 }

@@ -11,6 +11,7 @@ public class chatBoxUILogic : MonoBehaviour
 
     public bool test = false;
     private bool textFinished;
+    public bool chatBoxEnd;
 
     private UIDocument uiDocument;
     private VisualElement shader;
@@ -89,14 +90,16 @@ public class chatBoxUILogic : MonoBehaviour
 
             unSubscribeFromEvents();
             uiDocument.enabled = false;
+            chatBoxEnd = true;
         }
     }
 
     public async void enableChatBox(string characterName, string chatText, int msPerCha)
     {
+        chatBoxEnd = false;
         textFinished = false;
-        subscribeToEvents();
         uiDocument.enabled = true;
+        subscribeToEvents();
 
         characterNameLabel.text = characterName;
         chatTextLabel.text = "";

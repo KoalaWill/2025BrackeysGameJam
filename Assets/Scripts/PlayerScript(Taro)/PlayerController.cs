@@ -78,8 +78,8 @@ namespace TarodevController
             {
                 //JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W),
                 //JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W),
-                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(SettingsUILogic.instance.jumpKey),
-                JumpHeld = Input.GetButton("Jump") || Input.GetKey(SettingsUILogic.instance.jumpKey),
+                JumpDown = Input.GetKeyDown(SettingsUILogic.instance.jumpKey),
+                JumpHeld = Input.GetKey(SettingsUILogic.instance.jumpKey),
                 Move = new Vector2((Input.GetKey(SettingsUILogic.instance.rightKey) ? 1 : 0) - (Input.GetKey(SettingsUILogic.instance.leftKey) ? 1 : 0), 0)
             };
 

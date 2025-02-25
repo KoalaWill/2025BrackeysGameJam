@@ -11,6 +11,7 @@ public class EndingUILogic : MonoBehaviour
     public static EndingUILogic instance;
 
     private string timeText;
+    private bool aniFinished = false;
     public bool test = false;
 
     public UIDocument uiDocument;
@@ -97,15 +98,18 @@ public class EndingUILogic : MonoBehaviour
 
     public async void onGameOver()
     {
+        aniFinished = false;
         GameManager.instance.ChangeState(GameManager.GameState.GameOver);
         timeText = HistoryUILogic.formatTimeSpan(HistoryUILogic.instance.totalTime.TotalSeconds.ToString());
         HistoryUILogic.instance.saveRecordAndResetStopWatch();
 
-        subscribeToEvents();
         uiDocument.enabled = true;
+        subscribeToEvents();
         timeLabel.text = timeText;
 
+        await Task.Delay(1); //idk why
         shaderOpenAni();
         await Task.Delay(5000);
+        aniFinished = true;
     }
 }

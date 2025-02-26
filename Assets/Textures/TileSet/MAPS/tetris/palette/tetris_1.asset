@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: tetris_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1947794216, guid: 39e3b205c99b65d4dbf998cd129d36b0, type: 3}
+  m_Sprite: {fileID: -1937029104, guid: 39e3b205c99b65d4dbf998cd129d36b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

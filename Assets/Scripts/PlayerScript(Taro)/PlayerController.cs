@@ -46,11 +46,12 @@ namespace TarodevController
             GatherInput();
 
             transform.position = new Vector3(
-                Mathf.Clamp(transform.position.x, _stats.LeftBound, _stats.RightBound),
+            Mathf.Clamp(transform.position.x, _stats.LeftBound, _stats.RightBound),
                 Mathf.Clamp(transform.position.y, _stats.BottomBound, _stats.TopBound),
                 transform.position.z
             );
-            if(transform.position.y < _stats.BottomBound + 0.005f)
+
+            if (transform.position.y < _stats.BottomBound + 0.005f)
             {
                 Debug.Log("fall to death");
                 GameManager.instance.ChangeState(GameManager.GameState.GameOver);

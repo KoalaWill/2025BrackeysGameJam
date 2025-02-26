@@ -10,6 +10,8 @@ public class FollowPlayer : MonoBehaviour
     public Transform targetTRANS;
     [SerializeField] public float CamLeftBound;
     [SerializeField] public float CamRightBound;
+    [SerializeField] public float CamUpBound;
+    [SerializeField] public float CamLowBound;
 
     public GameObject target;
     public Camera camera;
@@ -32,7 +34,7 @@ public class FollowPlayer : MonoBehaviour
 
         Vector3 newPos = new Vector3(
             Mathf.Clamp(targetTRANS.position.x, CamLeftBound, CamRightBound),
-            Mathf.Clamp(targetTRANS.position.y + yOffset, -2.5f, 999999999),
+            Mathf.Clamp(targetTRANS.position.y + yOffset, CamLowBound, CamUpBound),
             -10f
 
         );

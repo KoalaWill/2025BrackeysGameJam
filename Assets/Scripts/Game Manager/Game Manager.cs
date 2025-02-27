@@ -37,12 +37,13 @@ public class GameManager : MonoBehaviour
                     break;
 
                 case GameState.Playing:
+                    Time.timeScale = 1f;
                     // Start gameplay
-                    break;
+                break;
 
                 case GameState.Paused:
-                    // Pause the game
-                    break;
+                    Time.timeScale = 0f;
+                break;
 
                 case GameState.GameOver:
                 if (SceneManager.GetActiveScene().name == "GameScene1")
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
                     if(level == 3)
                     {
                         EndingUILogic.instance.onGameOver();
+                        Time.timeScale = 0f;
                         ChangeState(GameState.Paused);
                     }
                     else
@@ -139,11 +141,10 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             if(currentState == GameState.Playing){
                 ChangeState(GameState.Paused);
-                Time.timeScale = 0f;
+                
             }
             else if(currentState == GameState.Paused){
                 ChangeState(GameState.Playing);
-                Time.timeScale = 1f;
             }
             // Debug.Log($"Current State: {GameManager.instance.currentState}");
         }

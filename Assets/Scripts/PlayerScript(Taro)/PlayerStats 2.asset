@@ -31,6 +31,6 @@ MonoBehaviour:
   CoyoteTime: 0.1
   JumpBuffer: 0.2
   LeftBound: -40
-  RightBound: 1000
-  TopBound: 20
+  RightBound: 420
+  TopBound: 40
   BottomBound: -140

@@ -57,10 +57,7 @@ namespace TarodevController
                 GameManager.instance.ChangeState(GameManager.GameState.GameOver);
 
             }
-            if (transform.position.x > _stats.RightBound - 0.1f)
-            {
-                GameManager.instance.ChangeState(GameManager.GameState.EndLevel);
-            }
+            
         }
 
         #region Input

@@ -861,7 +861,7 @@ MonoBehaviour:
   CamLeftBound: -1
   CamRightBound: 75
   CamUpBound: 88
-  CamLowBound: 83
+  CamLowBound: 82.3
   target: {fileID: 0}
   camera: {fileID: 771580390}
 --- !u!81 &771580389
@@ -932,7 +932,7 @@ Transform:
   m_GameObject: {fileID: 771580387}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 88.25, z: -10}
+  m_LocalPosition: {x: -1, y: 82.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

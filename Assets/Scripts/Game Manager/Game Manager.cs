@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
-//Awake is always called before any Start functions 
+        //Awake is always called before any Start functions 
         void Awake()
         {
             //Check if instance already exists 

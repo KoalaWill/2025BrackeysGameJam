@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
         //Awake is always called before any Start functions 
         void Awake()
         {
+            Screen.SetResolution(1920, 1080, true);
             //Check if instance already exists 
             if (instance == null) {
             //if not, set instance to this 

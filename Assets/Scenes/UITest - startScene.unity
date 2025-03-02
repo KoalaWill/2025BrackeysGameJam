@@ -389,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7d2a48f9011fe4f85de1f26967f443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 1424326503}
   uiDocument: {fileID: 443242731}
   keyBindChanged: 0
   inputOverlayEnabled: 0
@@ -972,7 +973,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7e885b3cb0527814e811ae0e0bc8c685, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0

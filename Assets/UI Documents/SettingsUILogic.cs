@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UIElements;
 
 [System.Serializable]
@@ -10,6 +11,7 @@ public class SettingsUILogic : MonoBehaviour
     public static SettingsUILogic instance;
 
     private bool eventsSubscribed;
+    public AudioSource audioSource;
 
     public UIDocument uiDocument;
     private VisualElement shader;
@@ -221,6 +223,7 @@ public class SettingsUILogic : MonoBehaviour
     {
         mainVolumeTextField.value = mainVolumeValue.ToString();
         mainVolumeSlider.value = mainVolumeValue;
+        audioSource.volume = mainVolumeValue / 100f * 0.2f;
         PlayerPrefs.SetInt("mainVolumeValue", mainVolumeValue);
     }
 

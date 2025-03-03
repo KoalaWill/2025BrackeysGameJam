@@ -19,6 +19,10 @@ public class parallaxMovement : MonoBehaviour
     void Update()
     {
         delta = FollowPlayer.instance.deltaX;
-        transform.position = new Vector3((transform.position.x - delta)*factor, transform.position.y, transform.position.z);
+        if(delta == 0) return;
+        else{
+            transform.position = new Vector3((transform.position.x - delta*factor), transform.position.y, transform.position.z);
+        }
+        
     }
 }

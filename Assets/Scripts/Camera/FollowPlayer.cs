@@ -12,12 +12,28 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField] public float CamRightBound;
     [SerializeField] public float CamUpBound;
     [SerializeField] public float CamLowBound;
+    public float deltaX;
 
     public GameObject target;
     public Camera camera;
 
+    public static FollowPlayer instance = null;
 
-    
+
+    private void Awake()
+    {
+        if (instance == null)
+        { 
+            instance = this;
+        }
+        
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +55,7 @@ public class FollowPlayer : MonoBehaviour
 
         );
 
-        
+        deltaX = newPos.x - transform.position.x;
 
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);    
         

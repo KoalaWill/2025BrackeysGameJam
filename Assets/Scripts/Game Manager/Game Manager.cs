@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
 
             //Call the InitGame function to initialize the first level 
             //InitGame();
-                    doingSetup = false;
+            doingSetup = false;
         }
 
 
@@ -122,10 +122,20 @@ public class GameManager : MonoBehaviour
         if(level == 1)
         {
             Debug.Log($"current level is{level}");
+            RunDelayAct(3);
             chatBoxUILogic.instance.enableChatBox("pizza cooks", "Chef! \nWe ran out off pizza ingridients, please grab some for us! \nThe supermarket is just across the street. You can use the garbage-can-to-rooftop shortcut.\nNothing can go wrong, right?", 50);
             //chatBoxUILogic.instance.enableChatBox("you", "Sure thing! \nNothing can go wrong, right?",20);
         }
 
+    }
+
+    void RunDelayAct(float delayTime)
+    {
+        StartCoroutine(DelayAct(delayTime));
+    }
+    IEnumerator DelayAct(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
     }
 
     //Update is called every frame. 

@@ -46,20 +46,9 @@ public class GameManager : MonoBehaviour
                 break;
 
                 case GameState.GameOver:
-                if (SceneManager.GetActiveScene().name == "GameScene1")
-                {
-                    LoadingUILogic.instance.addScenesToLaod("GameScene2"); //scene 2
-                    LoadingUILogic.instance.loadScenes();
-                    ChangeState(GameState.Playing);
-
-                }
-                else
-                {
-                    Debug.Log("DIED");
-                    LoadingUILogic.instance.addScenesToLaod("GameScene1"); //scene 1
-                    LoadingUILogic.instance.loadScenes();
-                }
-                // Show game over screen
+                Debug.Log("DIED");
+                LoadingUILogic.instance.addScenesToLaod("GameScene1"); //scene 1
+                LoadingUILogic.instance.loadScenes();
                 break;
 
                 case GameState.EndLevel:
@@ -72,7 +61,7 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        LoadingUILogic.instance.addScenesToLaod($"GameScene{level + 1}"); //scene 2
+                        LoadingUILogic.instance.addScenesToLaod($"GameScene{level + 1}"); //next scene
                         LoadingUILogic.instance.loadScenes();
                     }
                     break;
@@ -122,7 +111,7 @@ public class GameManager : MonoBehaviour
         if(level == 1)
         {
             Debug.Log($"current level is{level}");
-            RunDelayAct(3);
+            RunDelayAct(4);
             chatBoxUILogic.instance.enableChatBox("pizza cooks", "Chef! \nWe ran out off pizza ingridients, please grab some for us! \nThe supermarket is just across the street. You can use the garbage-can-to-rooftop shortcut.\nNothing can go wrong, right?", 50);
             //chatBoxUILogic.instance.enableChatBox("you", "Sure thing! \nNothing can go wrong, right?",20);
         }

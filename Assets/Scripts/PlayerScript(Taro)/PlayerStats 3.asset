@@ -33,4 +33,4 @@ MonoBehaviour:
   LeftBound: -12.6
   RightBound: 100
   TopBound: 150
-  BottomBound: -120
+  BottomBound: -70

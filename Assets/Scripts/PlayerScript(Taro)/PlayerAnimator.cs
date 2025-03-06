@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+
+
 
 namespace TarodevController
 {
@@ -64,6 +67,8 @@ namespace TarodevController
             HandleIdleSpeed();
 
             HandleCharacterTilt();
+
+            HandleFootStep();
         }
 
         private void HandleSpriteFlip()
@@ -73,6 +78,12 @@ namespace TarodevController
             }
         }
 
+        // IEnumerator PlaySteps()
+        // {
+        //         _source.PlayOneShot(_footsteps[Random.Range(0, _footsteps.Length)]);
+        //         while (_source.isPlaying)
+        //         yield return null;
+        // }
         private void HandleIdleSpeed()
         {
             var inputStrength = Mathf.Abs(_player.FrameInput.x);
@@ -80,7 +91,22 @@ namespace TarodevController
             //Debug.Log($"maxIdleSpeed: {_maxIdleSpeed}");
             _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(0, _maxIdleSpeed, inputStrength));
             _moveParticles.transform.localScale = Vector3.MoveTowards(_moveParticles.transform.localScale, Vector3.one * inputStrength, 2 * Time.deltaTime);
+            
         }
+
+        private void HandleFootStep()
+        {
+            var inputStrength = Mathf.Abs(_player.FrameInput.x);
+            if (inputStrength > 0.001 && _grounded){ 
+                _source.enabled = true;
+                if (!_source.isPlaying) {_source.PlayOneShot(_footsteps[Random.Range(0, _footsteps.Length)]);}
+            }
+            else{
+                _source.enabled = false;
+            }
+        }
+
+
 
         private void HandleCharacterTilt()
         {
@@ -112,7 +138,6 @@ namespace TarodevController
                 SetColor(_landParticles);
 
                 _anim.SetTrigger(GroundedKey);
-                // _source.PlayOneShot(_footsteps[Random.Range(0, _footsteps.Length)]);
                 _moveParticles.Play();
 
                 _landParticles.transform.localScale = Vector3.one * Mathf.InverseLerp(0, 40, impact);

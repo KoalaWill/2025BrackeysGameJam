@@ -57,7 +57,7 @@ public class FollowPlayer : MonoBehaviour
 
         deltaX = newPos.x - transform.position.x;
 
-        transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);    
+        transform.position = new Vector3(Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime).x, Vector3.Slerp(transform.position, newPos, (FollowSpeed+3) * Time.deltaTime).y, Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime).z);    
         
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 public class FollowPlayer : MonoBehaviour
@@ -45,7 +46,11 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.instance.currentState != GameManager.GameState.Playing) return;
+        if (GameManager.instance == null)
+        {
+            SceneManager.LoadScene("UITest - startScene"); //Hard reset.
+        }
+        if (GameManager.instance.currentState != GameManager.GameState.Playing) return;
         
 
         Vector3 newPos = new Vector3(
